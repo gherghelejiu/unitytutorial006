@@ -14,8 +14,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float pitchFactor = -3f;
     [SerializeField] float yawFactor = 2.5f;
     [SerializeField] float rollFactor = -20f;
-    [SerializeField] float pitchThrowFactor = 10f;
-    [SerializeField] float yawThrowFactor = 10f;
     float horizontalThrow = 0f;
     float verticalThrow = 0f;
 

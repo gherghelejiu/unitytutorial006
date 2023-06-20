@@ -13,7 +13,7 @@ public class CollisionController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<MeshRenderer>().enabled = false;
-        Debug.Log($"{this.name} triggered by {other.gameObject.name}");
+        // Debug.Log($"{this.name} triggered by {other.gameObject.name}");
         StartCrashSequence();
     }
 
@@ -34,6 +34,6 @@ public class CollisionController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log($"{this.name} collided with {collision.gameObject.name}");
+        // Debug.Log($"{this.name} collided with {collision.gameObject.name}");
     }
 }
