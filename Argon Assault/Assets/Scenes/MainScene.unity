@@ -217,6 +217,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 69.495, y: 18.043, z: 16.984}
+--- !u!1 &789149547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789149548}
+  m_Layer: 0
+  m_Name: Spawn At Runtime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &789149548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789149547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 125.63307, y: 120.90788, z: 157.37149}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &945971106
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4fb663f8b09904cb0ac080f824894c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionVfx: {fileID: 1132579393102289924, guid: 6e0e32560377e7b43a69693b80622c53, type: 3}
+  parent: {fileID: 789149548}
 --- !u!1 &1124915494
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +507,7 @@ GameObject:
   - component: {fileID: 1161092868}
   - component: {fileID: 1161092873}
   m_Layer: 0
-  m_Name: EnemyPlaceholder
+  m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,6 +624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4fb663f8b09904cb0ac080f824894c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionVfx: {fileID: 1132579393102289924, guid: 6e0e32560377e7b43a69693b80622c53, type: 3}
+  parent: {fileID: 789149548}
 --- !u!95 &1814164465 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1714690250725179101, guid: a2efc5b12a6f1564a8f92926cf0ce6f8, type: 3}
