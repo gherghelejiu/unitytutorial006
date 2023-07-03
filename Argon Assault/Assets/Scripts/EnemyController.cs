@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
 
-    [SerializeField] GameObject explosionVfx;
+    [SerializeField] GameObject explosionFx;
     [SerializeField] GameObject hitVfx;
     [SerializeField] GameObject parent;
     [SerializeField] int scorePerHit = 15;
@@ -47,7 +47,7 @@ public class EnemyController : MonoBehaviour
 
     private void KillEnemy()
     {
-        GameObject explosion = Instantiate(explosionVfx, this.transform.position, Quaternion.identity);
+        GameObject explosion = Instantiate(explosionFx, this.transform.position, Quaternion.identity);
         explosion.transform.parent = parent.transform;
         Destroy(this.gameObject);
     }
